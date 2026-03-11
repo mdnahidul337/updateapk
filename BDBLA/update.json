@@ -1,14 +1,14 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.5",
     "update_required": true,
     "title": "New Update Available",
     "message": "Please update the app to continue using the latest features.",
     "whats_new": [
         "New skins and mods added",
         "Download speed and notification improved",
-        "Minor UI fixes and bug improvements",
-        "mejor UI fixes and bug improvements"
+        "Minor UI fixes and bug improvements"
     ],
     "apk_url": "https://github.com/mdnahidul337/updateapk/bdbla.apk"
 
 }
+
