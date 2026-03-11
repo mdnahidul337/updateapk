@@ -4,10 +4,11 @@
     "title": "New Update Available",
     "message": "Please update the app to continue using the latest features.",
     "whats_new": [
-        "New skins and mods added",
-        "Download speed and notification improved",
-        "Minor UI fixes and bug improvements"
+        "Improved overall app performance",
+        "Faster and more reliable download system",
+        "More stable version with bug fixes"
     ],
     "apk_url": "https://github.com/mdnahidul337/updateapk/"
 
 }
+
