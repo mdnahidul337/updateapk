@@ -1,5 +1,5 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "update_required": true,
     "title": "New Update Available",
     "message": "Please update the app to continue using the latest features.",
@@ -11,3 +11,4 @@
     "apk_url": "https://raw.githubusercontent.com/mdnahidul337/updateapk/86fb6ab772e81437f80465abca66156cecbb3488/BDBLA/app-release.apk"
 
 }
+
