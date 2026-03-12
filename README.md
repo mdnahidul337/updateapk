@@ -1,7 +1,7 @@
 # UpdateAPK Repository
 
 এই রিপোজিটরিটি অ্যাপের **update.json** এবং **APK ফাইল** হোস্ট করার জন্য ব্যবহার করা হয়।
-অ্যাপ নতুন আপডেট চেক করার জন্য এখানে থাকা JSON ফাইল ব্যবহার করে।
+অ্যাপ নতুন আপডেট চেক করার জন্য এখানে থাকা **JSON ফাইল** ব্যবহার করে।
 
 ---
 
@@ -101,26 +101,66 @@ git push origin main
 
 ---
 
-# ℹ️ নোট
+# ⚠️ যদি Push Error দেখায়
 
-* JSON আপডেট করলে অ্যাপ নতুন আপডেট চেক করতে পারবে
-* APK ফাইল আপলোড করার পর `apk_url` আপডেট করতে হবে
-* GitHub Raw URL ব্যবহার করতে হবে
+যদি নিচের এরর আসে:
+
+```
+Updates were rejected because the remote contains work that you do not have locally
+```
+
+তাহলে আগে Pull করুন:
+
+```
+git pull origin main --allow-unrelated-histories
+```
+
+তারপর আবার Push করুন:
+
+```
+git push origin main
+```
+
+---
+
+# 🔗 Google Drive Download URL (ID System)
+
+যদি Google Drive থেকে APK ডাউনলোড করতে চান, তাহলে শুধু **File ID** ব্যবহার করুন।
 
 Example:
 
 ```
-https://github.com/mdnahidul337/updateapk/raw/main/bdbla.apk
+finalUrl = 'https://drive.google.com/uc?export=download&id=$id';
 ```
-If Git asks about merge strategy
 
-Run:
+এখানে `$id` হবে Google Drive ফাইলের ID।
 
-git pull origin main --allow-unrelated-histories
+Example Drive Link:
 
-Then push:
+```
+https://drive.google.com/file/d/1ABC123XYZ/view
+```
 
-git push origin main
+File ID:
+
+```
+1ABC123XYZ
+```
+
+Final Download URL:
+
+```
+https://drive.google.com/uc?export=download&id=1ABC123XYZ
+```
+
+---
+
+# ℹ️ নোট
+
+* JSON আপডেট করলে অ্যাপ নতুন আপডেট চেক করতে পারবে
+* APK ফাইল আপলোড করার পর `apk_url` আপডেট করতে হবে
+* GitHub **Raw URL** ব্যবহার করা ভালো
+* Google Drive ব্যবহার করলে **Direct Download URL** ব্যবহার করুন
 
 ---
 
