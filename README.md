@@ -112,6 +112,15 @@ Example:
 ```
 https://github.com/mdnahidul337/updateapk/raw/main/bdbla.apk
 ```
+If Git asks about merge strategy
+
+Run:
+
+git pull origin main --allow-unrelated-histories
+
+Then push:
+
+git push origin main
 
 ---
 
