@@ -1,13 +1,12 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.6.1",
     "update_required": true,
-    "title": "New Update Available",
+    "title": "New Update Available V1.0.6",
     "message": "Please update the app to continue using the latest features.",
     "whats_new": [
-        "Improved overall app performance",
+        "New features/improvements",
         "Faster and more reliable download system",
-        "More stable version with bug fixes"
+        "More stable versions with bug fixes"
     ],
-    "apk_url": "https://raw.githubusercontent.com/mdnahidul337/updateapk/86fb6ab772e81437f80465abca66156cecbb3488/BDBLA/app-release.apk"
-
+    "apk_url": "https://raw.githubusercontent.com/mdnahidul337/updateapk/refs/heads/main/BDBLA/app-release.apk"
 }
