@@ -1,7 +1,7 @@
 # UpdateAPK Repository
 
 এই রিপোজিটরিটি অ্যাপের **update.json** এবং **APK ফাইল** হোস্ট করার জন্য ব্যবহার করা হয়।
-অ্যাপ নতুন আপডেট চেক করার জন্য এখানে থাকা **JSON ফাইল** ব্যবহার করে।
+অ্যাপ নতুন আপডেট চেক করার জন্য এখানে থাকা JSON ফাইল ব্যবহার করে।
 
 ---
 
@@ -36,6 +36,24 @@ updateapk
   ],
   "apk_url": "https://github.com/mdnahidul337/updateapk/raw/main/bdbla.apk"
 }
+```
+
+---
+
+# 🔗 Direct Download URL Example
+
+APK ডাউনলোড করার জন্য একটি সরাসরি লিংক ব্যবহার করতে পারেন।
+
+Example:
+
+```
+https://drive.usercontent.google.com/download?id=1hg4Fu3QqRQgCXcTgE6Hp5XeW20-GJAPp&export=download
+```
+
+App এর কোডে উদাহরণ:
+
+```
+finalUrl = 'https://drive.usercontent.google.com/download?id=1hg4Fu3QqRQgCXcTgE6Hp5XeW20-GJAPp&export=download';
 ```
 
 ---
@@ -90,32 +108,21 @@ git push origin main
 
 ---
 
-# 🚀 সম্পূর্ণ CMD কমান্ড একসাথে
+# ⚠️ Push Error Fix (If Rejected)
+
+যদি এই ধরনের error আসে:
 
 ```
-cd C:\Users\Nahid\Desktop\updateapk
-git add .
-git commit -m "update version"
-git push origin main
+! [rejected] main -> main (fetch first)
 ```
 
----
-
-# ⚠️ যদি Push Error দেখায়
-
-যদি নিচের এরর আসে:
-
-```
-Updates were rejected because the remote contains work that you do not have locally
-```
-
-তাহলে আগে Pull করুন:
+তাহলে আগে pull করুন:
 
 ```
 git pull origin main --allow-unrelated-histories
 ```
 
-তারপর আবার Push করুন:
+তারপর আবার push করুন:
 
 ```
 git push origin main
@@ -123,34 +130,14 @@ git push origin main
 
 ---
 
-# 🔗 Google Drive Download URL (ID System)
-
-যদি Google Drive থেকে APK ডাউনলোড করতে চান, তাহলে শুধু **File ID** ব্যবহার করুন।
-
-Example:
+# 🚀 সম্পূর্ণ CMD কমান্ড একসাথে
 
 ```
-finalUrl = 'https://drive.google.com/uc?export=download&id=$id';
-```
-
-এখানে `$id` হবে Google Drive ফাইলের ID।
-
-Example Drive Link:
-
-```
-https://drive.google.com/file/d/1ABC123XYZ/view
-```
-
-File ID:
-
-```
-1ABC123XYZ
-```
-
-Final Download URL:
-
-```
-https://drive.google.com/uc?export=download&id=1ABC123XYZ
+cd C:\Users\Nahid\Desktop\updateapk
+git pull origin main
+git add .
+git commit -m "update version"
+git push origin main
 ```
 
 ---
@@ -159,8 +146,29 @@ https://drive.google.com/uc?export=download&id=1ABC123XYZ
 
 * JSON আপডেট করলে অ্যাপ নতুন আপডেট চেক করতে পারবে
 * APK ফাইল আপলোড করার পর `apk_url` আপডেট করতে হবে
-* GitHub **Raw URL** ব্যবহার করা ভালো
-* Google Drive ব্যবহার করলে **Direct Download URL** ব্যবহার করুন
+* GitHub Raw URL ব্যবহার করা ভালো
+
+Example:
+
+```
+https://github.com/mdnahidul337/updateapk/raw/main/bdbla.apk
+```
+
+---
+
+# 📢 Update Message Example
+
+নতুন আপডেট রিলিজ হলে ব্যবহারকারীদের জন্য উদাহরণ মেসেজ:
+
+```
+New Update Available!
+
+✔ Improved app performance  
+✔ Faster download system  
+✔ More stable version with bug fixes  
+
+Please update the app to enjoy the latest improvements.
+```
 
 ---
 
