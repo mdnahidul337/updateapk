@@ -1,15 +1,16 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "update_required": true,
     "title": "New Update Available",
     "message": "Please update the app to continue using the latest features.",
     "whats_new": [
-        "Improved overall app performance",
-        "New stable download system",
-        "better support and rewards"
+        "Fixed Download URL Not Found issue",
+        "Fixed ads not loading properly",
+        "Minor bug fixes and performance improvements"
     ],
-    "apk_url": "https://drive.usercontent.google.com/download?id=1xxt6BsEvcMhUsd-y3H2JalTxLN-gdZB6&export=download&authuser=0&confirm=t&uuid=3988c72b-1aa6-435d-933b-fef86e12661a&at=AGN2oQ1XWaepbitIObvWLS0J21oc:1773298265464"
+    "apk_url": "https://drive.usercontent.google.com/download?id=1q5XCe3AMW_qI7aAdvjhmDVOzkd2Q2DrX&export=download&authuser=0&confirm=t&uuid=3090d658-4239-435b-b738-444bb60e0161&at=AGN2oQ1kuhzLzbCO4svKjR-GQPwO:1773395070457"
 }
+
 
 
 
